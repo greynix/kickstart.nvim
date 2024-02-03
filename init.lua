@@ -71,7 +71,8 @@ require('lazy').setup({
 
   -- Git related plugins
   'tpope/vim-fugitive',
-  'tpope/vim-rhubarb',
+  -- for github
+  -- 'tpope/vim-rhubarb',
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
@@ -94,6 +95,8 @@ require('lazy').setup({
       'folke/neodev.nvim',
     },
   },
+
+
 
   {
     -- Autocompletion
@@ -197,7 +200,7 @@ require('lazy').setup({
     config = function()
       require('onedark').setup {
         -- Set a style preset. 'dark' is default.
-        style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
+        style = 'deep', -- dark, darker, cool, deep, warm, warmer, light
       }
       require('onedark').load()
     end,
