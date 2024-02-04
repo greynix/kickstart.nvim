@@ -149,6 +149,7 @@ require('lazy').setup({
           return '<Ignore>'
         end, { expr = true, desc = 'Jump to next hunk' })
 
+        -- some sec name
         map({ 'n', 'v' }, '[c', function()
           if vim.wo.diff then
             return '[c'
